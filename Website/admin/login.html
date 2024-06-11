@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../index.css" rel="stylesheet">
+        <script src="admin.js"></script>
+    </head>
+    <style>
+        .connection {
+            font-size: 1.5em;
+            margin: 1em;
+            text-align: left;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .connection:hover {
+            background: rgb(255, 255, 255, 0.1)
+        }
+        #shutdown{
+            background: rgb(255, 255, 255, 0.3);
+            width: 40%;
+            height: 50%;
+            position: absolute;
+            border-radius: 10px;
+        }
+    </style>
+    <body>
+        <div class="center">
+            <h1>Admin Interface</h1>
+            <div id="login">
+            <input class="form-input" type="password" name="password" placeholder="Password">
+            <button type="button" class="form-submit" onclick="login()">Login</button>
+            </div>
+            <div id="admin" style="display: none;">
+                <h1>All Active Connections</h1>
+                <div id="conns" style="display:none;">
+                </div>
+                <br>
+                <br>
+                <button class="form-submit" type="button" onclick="fetchConns()" >Fetch</button>
+                <br>
+                <br>
+                <button class="form-submit" type="button" onclick="shutdownReq()" >Shutdown Server</button>
+            </div>
+            <div style="display:none;" id="shutdown">
+                <h1>Are You Sure U Want To Shutdown The Server</h1>
+                <button type="button" class="form-submit" onclick="shutdown()">Shutdown</button>
+                <button type="button" class="form-submit" onclick="shutdownCancel()">Dont Shutdown</button>
+            </div>
+        </div>
+    </body>
+</html>

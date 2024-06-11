@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet">
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    </head>
+    <body onload="connectToServerIndex()">
+        <div class="star-background" id="stars">
+        </div>
+
+        <div class="loading-screen" id="loading">
+        </div>
+
+        <div class="loading-screen" id="loading-rev">
+        </div>
+
+
+        <div class="center">
+            <h1>Login</h1>
+            <input type="text" class="form-input" name="username" placeholder="Nutzername">
+            <br>
+            <br>
+            <input type="password" class="form-input" name="password" placeholder="Passwort">
+            <br>
+            <br>
+            <button type="button" class="form-submit hover-button" onclick="login()">Login</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="button" class="form-submit hover-button" onclick="transition('/')">Zurück</button>
+        </div>
+        <br>
+        <div id="errors" class="errors">
+        </div>
+    </body>
+</html>

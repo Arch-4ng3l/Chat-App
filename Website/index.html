@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="index.css" rel="stylesheet">
+        <script src="index.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&effect=anaglyph">
+        <style>
+            h1 {
+                font-size: 4em;
+            }
+        </style>
+    </head>
+    <body onload="connectToServerIndex()">
+        <div class="star-background" id="stars">
+        </div>
+
+        <div class="loading-screen" id="loading">
+        </div>
+
+        <div class="loading-screen" id="loading-rev">
+        </div>
+
+
+        <div class="center">
+        <h1 class="font-effect-anaglyph">Wilkommen zu [Name]</h1>
+        <h2>Erstelle einen neuen Account</h2>
+        <button class="form-submit hover-button" type="button" onclick="transition('/signup.html')">Sign Up</button>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>Du hast schon einen Account</h2>
+        <button class="form-submit hover-button" type="button" onclick="transition('/login.html')">Login</button>
+        </div>
+    </body>
+</html>
